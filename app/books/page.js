@@ -96,8 +96,8 @@ const books = [
 export default function BooksPage() {
   return (
     <section className="mx-auto max-w-6xl px-6 py-16">
-      <h2 className="text-4xl font-semibold text-espresso">Book Recommendations</h2>
-      <p className="mt-3 max-w-2xl text-espresso/70">
+      <h2 className="text-4xl font-semibold text-espresso dark:text-[#f9f8f0]">Book Recommendations</h2>
+      <p className="mt-3 max-w-2xl text-espresso/70 dark:text-[#f9f8f0]/70">
         A small library of stories chosen for emotional resonance.
       </p>
 
@@ -105,7 +105,7 @@ export default function BooksPage() {
         {books.map((book) => (
           <article
             key={book.title}
-            className="group rounded-2xl border border-espresso/10 bg-alice-blue/40 p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md"
+            className="group rounded-2xl border border-espresso/10 bg-alice-blue/40 dark:bg-eggshell dark:text-espresso p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md"
           >
             <div className="flex justify-center">
               <Image
@@ -127,7 +127,7 @@ export default function BooksPage() {
                 {book.tags.map((t) => (
                   <span
                     key={t}
-                    className="rounded-full border border-espresso/15 bg-eggshell px-3 py-1 text-xs text-espresso/80"
+                    className="rounded-full border border-espresso/15 bg-eggshell px-3 py-1 text-xs text-espresso/80 dark:bg-dry-sage/70"
                   >
                     {t}
                   </span>

@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-papaya-whip`}
       >
-        <header className="border-b bg-papaya-whip">
+        <header className="border-b bg-papaya-whip text-espresso dark:bg-dry-sage dark:text-espresso">
           <div className="mx-auto max-w-6xl flex justify-between items-center p-4">
             <h1 className="text-xl font-semibold">The Cozy Corner</h1>
             <nav className="space-x-4 text-sm">
@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
 
         <main className="mx-auto max-w-6xl p-6">{children}</main>
 
-        <footer className="text-center text-sm text-zinc-500 py-6">
+        <footer className="text-center text-sm text-zinc-500 py-6 dark:text-eggshell">
           © 2026 The Cozy Corner
         </footer>
       </body>

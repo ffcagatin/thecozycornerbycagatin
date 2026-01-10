@@ -77,11 +77,11 @@ function BookCard({ book, showTags = false }) {
         />
       </div>
 
-      <p className="mt-4 font-semibold text-espresso">{book.title}</p>
-      <p className="text-sm text-zinc-600">{book.author}</p>
+      <p className="mt-4 font-semibold text-espresso dark:text-[#f9f8f0]">{book.title}</p>
+      <p className="text-sm text-zinc-600 dark:text-[#f9f8f0]/80">{book.author}</p>
 
       {showTags && book.tags?.length ? (
-        <div className="mt-3 space-y-1 text-xs text-zinc-500">
+        <div className="mt-3 space-y-1 text-xs text-zinc-500 dark:text-[#f9f8f0]/70">
           {book.tags.map((t) => (
             <p key={t}>{t}</p>
           ))}
@@ -96,7 +96,7 @@ export default function Home() {
     <div className="min-h-screen px-6 py-16">
       <div className="mx-auto w-full max-w-5xl">
         <section className="flex justify-center">
-          <main className="flex w-full max-w-3xl flex-col items-center gap-10 rounded-lg bg-alice-blue px-10 py-24 shadow">
+          <main className="flex w-full max-w-3xl flex-col items-center gap-10 rounded-lg px-10 py-24 shadow bg-alice-blue text-espresso dark:bg-[#f9f8f0] dark:text-espresso">
             <Image
               src="/images/cover.jpg"
               alt="The Cozy Corner"
@@ -134,7 +134,7 @@ export default function Home() {
         </section>
 
         <section className="mt-16">
-          <h2 className="text-2xl font-semibold text-espresso">
+          <h2 className="text-2xl font-semibold text-espresso dark:text-[#f9f8f0]">
             This Week’s Cozy Picks
           </h2>
 
@@ -146,10 +146,10 @@ export default function Home() {
         </section>
 
         <section className="mt-16">
-          <h2 className="text-2xl font-semibold text-espresso">Browse By Feeling</h2>
+          <h2 className="text-2xl font-semibold text-espresso dark:text-[#f9f8f0]">Browse By Feeling</h2>
 
           <div className="mt-8">
-            <h3 className="text-lg font-semibold text-espresso">
+            <h3 className="text-lg font-semibold text-espresso dark:text-[#f9f8f0]">
               The Kind of Love That Lingers
             </h3>
             <div className="mt-4 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -160,7 +160,7 @@ export default function Home() {
           </div>
 
           <div className="mt-12">
-            <h3 className="text-lg font-semibold text-espresso">Floating Through Grief</h3>
+            <h3 className="text-lg font-semibold text-espresso dark:text-[#f9f8f0]">Floating Through Grief</h3>
             <div className="mt-4 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
               {floatingThroughGrief.map((book) => (
                 <BookCard key={book.title} book={book} showTags />
@@ -169,7 +169,7 @@ export default function Home() {
           </div>
 
           <div className="mt-12">
-            <h3 className="text-lg font-semibold text-espresso">
+            <h3 className="text-lg font-semibold text-espresso dark:text-[#f9f8f0]">
               Academia Through Different Perspectives
             </h3>
             <div className="mt-4 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">

@@ -3,6 +3,20 @@
 :root {
   --background: #f9f8f0;
   --foreground: var(--color-espresso);
+
+  --nav-bg: var(--color-papaya-whip);
+  --nav-text: var(--color-espresso);
+
+  --hero-bg: var(--color-alice-blue);
+  --hero-text: var(--color-espresso);
+
+  --page-text: var(--color-espresso);
+  
+  --book-title: var(--color-espresso);
+  --book-author: oklch(0.45 0.02 36.92);
+  --book-genre: oklch(0.45 0.02 36.92);
+  --book-tag-bg: var(--color-eggshell);
+  --book-tag-text: var(--color-espresso);
 }
 
 @theme {
@@ -41,6 +55,14 @@
   :root {
     --background: var(--color-espresso);
     --foreground: #f9f8f0;
+
+    --nav-bg: var(--color-dry-sage);
+    --nav-text: var(--color-espresso);
+
+    --hero-bg: #f9f8f0;
+    --hero-text: var(--color-espresso);
+
+    --page-text: #f9f8f0;
   }
 }
 
