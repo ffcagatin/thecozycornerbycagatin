@@ -1,0 +1,3 @@
+Sitemap: https://thecozycornerbycagatin.vercel.app/sitemap.xml
+User-agent: *
+Disallow:
