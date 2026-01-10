@@ -21,9 +21,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-50`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-papaya-whip`}
       >
-        <header className="border-b bg-white">
+        <header className="border-b bg-papaya-whip">
           <div className="mx-auto max-w-6xl flex justify-between items-center p-4">
             <h1 className="text-xl font-semibold">The Cozy Corner</h1>
             <nav className="space-x-4 text-sm">

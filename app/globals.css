@@ -1,8 +1,17 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f9f8f0;
+  --foreground: var(--color-espresso);
+}
+
+@theme {
+  --color-eggshell: oklch(0.9564 0.0201 97.53);
+  --color-alice-blue: oklch(0.9302 0.0278 239.66);
+  --color-papaya-whip: oklch(0.9638 0.0364 86.17);
+  --color-dry-sage: oklch(0.8093 0.0642 102.74);
+  --color-sand: oklch(0.736 0.0871 102.28);
+  --color-espresso: oklch(0.3522 0.048 36.92);
 }
 
 @theme inline {
@@ -12,15 +21,23 @@
   --font-mono: var(--font-geist-mono);
 }
 
+@font-face {
+  font-family: "TT Norms";
+  src: url(/public/fonts/TTNorms-Medium.otf) format('opentype');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: var(--color-espresso);
+    --foreground: #f9f8f0;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "TT Norms", sans-serif;
 }
