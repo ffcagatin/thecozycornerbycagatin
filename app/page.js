@@ -6,61 +6,74 @@ const cozyPicks = [
     title: "Severance",
     author: "Ling Ma",
     cover: "/images/severance.png",
+    alt: "Book cover of Severance by Ling Ma, featuring a simple, almost manuscript-like look, with a pink cover",
     tags: ["Dystopian", "When Life Feels on Autopilot"],
   },
   {
     title: "The Bell Jar",
     author: "Sylvia Plath",
     cover: "/images/belljar.png",
+    alt: "Book cover of Bell Jar by Sylvia Plath, featuring an illustration of a woman’s legs in stiletto heels ",
     tags: ["Autobiography", "High-Functioning Sadness"],
   },
   {
     title: "Madonna in a Fur Coat",
     author: "Sabahattin Ali",
     cover: "/images/madonna.png",
+    alt: "Book cover of Madonna in a Fur Coat by Sabahattin Ali, featuring vintage imagery of a couple",
     tags: ["Literary Fiction", "Emotionally Invisible"],
   },
   {
     title: "Alone With You in the Ether",
     author: "Olivie Blake",
     cover: "/images/alonewithyou.png",
+    alt: "Book cover of Alone With You in the Ether by Olivie Blake, featuring a minimalist design in muted tones",
     tags: ["Contemporary Romance", "What It Means To Be Unwell"],
   },
 ];
 
 const loveThatLingers = [
   { title: "Normal People", author: "Sally Rooney", 
-    cover: "/images/normalpeople.png", tags: ["Literary Fiction", "Almost, But Not Quite"],
+    cover: "/images/normalpeople.png", alt: "Book cover of Normal People by Sally Rooney, featuring a blue and green background with illustrations of a young man and woman",
+    tags: ["Literary Fiction", "Almost, But Not Quite"],
   },
   { title: "Talking at Night", author: "Claire Daverley", 
-    cover: "/images/talking.png", tags: ["Contemporary Romance", "The Enduring Power of Memory"],
+    cover: "/images/talking.png", alt: "Book cover of Talking at Night by Claire Daverley, featuring an illustration of a couple leaning on each other while looking up at the sky",
+    tags: ["Contemporary Romance", "The Enduring Power of Memory"],
   },
   { title: "Heart the Lover", author: "Lily King", 
-    cover: "/images/heartlover.png", tags: ["Coming of Age", "The Ache of Missed Chances"],
+    cover: "/images/heartlover.png", alt: "Book cover of Heart the Lover by Lily King, featuring an illustration of stylized eyes with white petals falling like tears on an orange background",
+    tags: ["Coming of Age", "The Ache of Missed Chances"],
   },
 ];
 
 const floatingThroughGrief = [
   { title: "Blue Sisters", author: "Coco Mellors", 
-    cover: "/images/bluesisters.png", tags: ["Women's Fiction", "Complex bonds of Sisterhood"],
+    cover: "/images/bluesisters.png", alt: "Book cover of Blue Sisters by Coco Mellors, featuring a portrait of one of the sisters",
+    tags: ["Women's Fiction", "Complex bonds of Sisterhood"],
   },
   { title: "Sunbathing", author: "Isobel Beech", 
-    cover: "/images/sunbathing.png", tags: ["Literary Fiction", "A Quiet Meditation on Grief"],
+    cover: "/images/sunbathing.png", alt: "Book cover of Sunbathing by Isobel Beech, featuring a large white text over a blurred outdoor landscape image framed by a purple border",
+    tags: ["Literary Fiction", "A Quiet Meditation on Grief"],
   },
   { title: "Crying in H Mart", author: "Michelle Zauner", 
-    cover: "/images/crying.png", tags: ["Biography", "When Food Is the Only Way Back"],
+    cover: "/images/crying.png", alt: "Book cover of Crying in H Mart by Michelle Zauner, featuring noodles being lifted by chopsticks against a vibrant red background",
+    tags: ["Biography", "When Food Is the Only Way Back"],
   },
 ];
 
 const academiaPerspectives = [
   { title: "The Idiot", author: "Elif Batuman", 
-    cover: "/images/idiot.png", tags: ["Literary Fiction", "Intellectually Lonely"],
+    cover: "/images/idiot.png", alt: "Book cover of The Idiot by Elif Batuman, featuring a simple design against a pale pink background with a single, large rock in the middle",
+    tags: ["Literary Fiction", "Intellectually Lonely"],
   },
   { title: "The Secret History", author: "Donna Tartt", 
-    cover: "/images/secrethistory.png", tags: ["Psychological Fiction", "The destructiveness of Secrets"],
+    cover: "/images/secrethistory.png", alt: "Book cover of The Secret History by Donna Tartt, featuring a close-up image of a classical statue’s face in beige tones, with the title and author’s name centered in black text",
+    tags: ["Psychological Fiction", "The Destructiveness of Secrets"],
   },
   { title: "If We Were Villains", author: "M. L. Rio", 
-    cover: "/images/villains.png", tags: ["Literary Thriller", "The Costs of Complicity"],
+    cover: "/images/villains.png", alt: "Book cover of If We Were Villains by M. L. Rio, featuring a human skull centered on a dark background, with the title written in white script and a thin yellow line crossing the skull horizontally",
+    tags: ["Literary Thriller", "The Costs of Complicity"],
   },
 ];
 
@@ -99,7 +112,7 @@ export default function Home() {
           <main className="flex w-full max-w-3xl flex-col items-center gap-10 rounded-lg px-10 py-24 shadow bg-alice-blue text-espresso dark:bg-[#f9f8f0] dark:text-espresso">
             <Image
               src="/images/cover.jpg"
-              alt="The Cozy Corner"
+              alt="Artwork of Snoopy on a sofa reading a book"
               width={150}
               height={190}
               priority

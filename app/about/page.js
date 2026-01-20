@@ -32,7 +32,7 @@ export default function AboutPage() {
         <div className="md:w-1/2 flex justify-center">
           <Image
             src="/images/about.jpeg"
-            alt="Cozy reading corner"
+            alt="Artwork of Snoopy on a bed reading a book"
             width={350}
             height={350}
             className="rounded-lg object-cover shadow-md"
